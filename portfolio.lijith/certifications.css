@@ -1,0 +1,54 @@
+/* Styling for Certifications Cards */
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards */
+}
+
+.certification-card {
+    background-color: #eeeeee; /* Off-white */
+    border: 1px solid #1a4f1a; /* Forest green border */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Make card responsive to container */
+    max-width: 350px; /* Set a reasonable max width */
+    min-width: 220px; /* Prevent card from getting too small */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add some shadow */
+    transition: transform 0.3s ease-in-out; /* Add hover effect */
+    height: auto; /* Let card grow with content */
+    overflow: visible; /* Prevent content from being cut off */
+}
+
+.certification-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.certification-card h3 {
+    margin-top: 0;
+    color: #1a4f1a; /* Forest green text */
+}
+
+.section-title-wrap {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    overflow: visible !important;
+}
+
+.section-title-wrap h1,
+.section-title-wrap p {
+    display: block;
+    margin-bottom: 10px;
+    color: #1a4f1a;
+    background: none;
+    z-index: 2;
+    position: relative;
+} 
